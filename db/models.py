@@ -51,7 +51,3 @@ class MovieSession(models.Model):
 
     def __str__(self) -> str:
         return f"{self.movie} {self.show_time}"
-
-
-actors = models.ManyToManyField(Actor)
-genres = models.ManyToManyField(Genre)
